@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ยินดีต้อนรับสู่จังหวัดแพร่</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #8f5c4b;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        h1, h2 {
+            margin: 0.5em 0;
+        }
+        .tabs {
+            display: flex;
+            justify-content: center;
+            background-color: #8f5c4b;
+            color: white;
+        }
+        .tab {
+            padding: 1rem;
+            cursor: pointer;
+            flex: 1;
+            text-align: center;
+            background-color: #8f5c4b;
+            border-bottom: 3px solid transparent;
+        }
+        .tab:hover {
+            background-color: #6e473a;
+        }
+        .tab.active {
+            border-bottom: 3px solid white;
+            background-color: #6e473a;
+        }
+        .tab-content {
+            display: none;
+            padding: 2rem;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .card {
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            margin: 1rem 0;
+            overflow: hidden;
+            background-color: #fff;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card-content {
+            padding: 1rem;
+        }
+        footer {
+            background-color: #8f5c4b;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ยินดีต้อนรับสู่จังหวัดแพร่</h1>
+        <p>แหล่งท่องเที่ยว ประเพณี ที่พัก และอาหารที่ขึ้นชื่อ</p>
+    </header>
+
+    <div class="tabs">
+        <div class="tab active" data-tab="tourist">สถานที่ท่องเที่ยว</div>
+        <div class="tab" data-tab="tradition">ประเพณี</div>
+        <div class="tab" data-tab="accommodation">ที่พักแนะนำ</div>
+        <div class="tab" data-tab="food">อาหารขึ้นชื่อ</div>
+        <div class="tab" data-tab="about">ข้อมูลผู้จัดทำ</div>
+    </div>
+
+    <div id="tourist" class="tab-content active">
+        <h2>สถานที่ท่องเที่ยว</h2>
+        <div class="card">
+            <img src="images/วัดพระธาตุช่อแฮ.jpg" alt="วัดพระธาตุช่อแฮ" width="700">
+            <div class="card-content">
+                <h3>วัดพระธาตุช่อแฮ</h3>
+                <p>วัดเก่าแก่คู่บ้านคู่เมืองแพร่ มีพระธาตุศักดิ์สิทธิ์ประจำปีขาล</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/คุ้มเจ้าหลวง.jpg" alt="คุ้มเจ้าหลวง" width="700">
+            <div class="card-content">
+                <h3>คุ้มเจ้าหลวง</h3>
+                <p>สถาปัตยกรรมเก่าแก่ที่บอกเล่าเรื่องราวของเมืองแพร่</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/ถ้ำผานางคอย.jfif" alt="ถ้ำผานางคอย" width="700">
+            <div class="card-content">
+                <h3>ถ้ำผานางคอย</h3>
+                <p>ถ้ำที่เต็มไปด้วยตำนานความรักอันลึกซึ้ง</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="tradition" class="tab-content">
+        <h2>ประเพณี</h2>
+        <ul>
+            <li><strong>ประเพณีตานก๋วยสลาก:</strong> การทำบุญแบบโบราณด้วยการถวายของเป็นก๋วยสลาก</li>
+            <li><strong>งานประเพณีไหว้พระธาตุช่อแฮ:</strong> งานบุญใหญ่ของชาวแพร่ประจำปี</li>
+            <li><strong>ประเพณีแห่ครัวตาน:</strong> การแห่เครื่องสักการะพระสงฆ์ในวัด</li>
+        </ul>
+    </div>
+
+    <div id="accommodation" class="tab-content">
+        <h2>ที่พักแนะนำ</h2>
+        <ul>
+            <li><strong>โรงแรมเฮือนนานา:</strong> ที่พักสไตล์ล้านนาในเมืองแพร่</li>
+            <li><strong>บ้านสุชาดารีสอร์ท:</strong> รีสอร์ทบรรยากาศเงียบสงบ</li>
+            <li><strong>แพร่ริเวอร์ไซด์โฮเทล:</strong> โรงแรมริมแม่น้ำที่พักผ่อนสบาย</li>
+        </ul>
+    </div>
+
+    <div id="food" class="tab-content">
+        <h2>อาหารขึ้นชื่อ</h2>
+        <ul>
+            <li><strong>ขนมจีนน้ำเงี้ยว:</strong> อาหารพื้นเมืองรสชาติจัดจ้าน</li>
+            <li><strong>แกงฮังเล:</strong> แกงเนื้อหมูที่เป็นเอกลักษณ์ของภาคเหนือ</li>
+            <li><strong>แคบหมูน้ำพริกหนุ่ม:</strong> ของกินเล่นยอดนิยมคู่กับน้ำพริกหนุ่ม</li>
+        </ul>
+    </div>
+
+    <div id="about" class="tab-content">
+        <h2>ข้อมูลผู้จัดทำ</h2>
+        <p>จัดทำโดย: นางสาวนัทฌา เข็มเพ็ชร</p>
+        <p>รหัสนักศึกษา: MMT36621N 366431221008</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 จังหวัดแพร่ | ออกแบบและจัดทำโดย นางสาวนัทฌา เข็มเพ็ชร</p>
+    </footer>
+
+    <script>
+        const tabs = document.querySelectorAll('.tab');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                // ลบสถานะ active จากแท็บและเนื้อหาเดิม
+                tabs.forEach(t => t.classList.remove('active'));
+                tabContents.forEach(content => content.classList.remove('active'));
+
+                // เพิ่มสถานะ active ให้กับแท็บและเนื้อหาใหม่
+                tab.classList.add('active');
+                document.getElementById(tab.dataset.tab).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
